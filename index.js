@@ -6,9 +6,9 @@ function findMatching(array, name) {
 
 function fuzzyMatch(array, string) {
   function match(word) {
+    debugger;
     return word.slice(0, string.length).toLowerCase === string.toLowerCase;
   }
   const newArray = array.filter(match);
-  debugger;
   return newArray;
 }
