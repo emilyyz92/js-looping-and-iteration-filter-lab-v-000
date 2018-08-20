@@ -9,5 +9,6 @@ function fuzzyMatch(array, string) {
     return word.slice(0, string.length).toLowerCase === string.toLowerCase;
   }
   const newArray = array.filter(word => match(word, string));
+  debugger;
   return newArray;
 }
