@@ -5,6 +5,9 @@ function findMatching(array, name) {
 }
 
 function fuzzyMatch(array, string) {
+  function match(word, string) {
+    return string.slice()
+  }
   const newArray = array.filter(word => word.slice(0, string.length).toLowerCase === string.toLowerCase);
   debugger;
   return newArray;
