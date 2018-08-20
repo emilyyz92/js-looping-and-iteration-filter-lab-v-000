@@ -11,3 +11,8 @@ function fuzzyMatch(array, string) {
   const newArray = array.filter(match);
   return newArray;
 }
+
+function matchName(array, name) {
+  const newArray = array.filter(object => function (object) {object[name] === name})
+  return newArray;
+}
